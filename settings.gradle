@@ -1,1 +1,1 @@
-include ':app', ':ViewPager', ':ChatUI'
+include ':app', ':ViewPager', ':ChatUI', ':DelayActivity'

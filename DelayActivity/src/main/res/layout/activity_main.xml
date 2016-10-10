@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.myapplication.MainActivity"
+    android:background="@android:color/transparent">
+
+
+    <TextView
+        android:id="@+id/tv_delay_open"
+        android:layout_width="wrap_content"
+        android:padding="20dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="在1小时20分后               开启"
+        android:background="@mipmap/delay_time_over"
+        android:layout_above="@+id/tv_delay_close"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp" />
+    <TextView
+        android:text="正在执行"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableBottom="@mipmap/delay_time_wait_next"
+        android:layout_above="@+id/tv_delay_open"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="1dp" />
+    <TextView
+        android:id="@+id/tv_delay_close"
+        android:layout_width="wrap_content"
+        android:padding="20dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="在1小时20分后               关闭"
+        android:background="@mipmap/delay_time_bg"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/tv_delay_repeat"
+        android:layout_alignStart="@+id/tv_delay_repeat" />
+    <TextView
+        android:text="正在执行"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableBottom="@mipmap/delay_time_wait_next"
+        android:layout_above="@+id/tv_delay_close"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="1dp" />
+    <TextView
+        android:id="@+id/tv_delay_repeat"
+        android:layout_width="wrap_content"
+        android:padding="20dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="重复               无限循环"
+        android:background="@mipmap/delay_time_wait"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="92dp" />
+
+</RelativeLayout>
