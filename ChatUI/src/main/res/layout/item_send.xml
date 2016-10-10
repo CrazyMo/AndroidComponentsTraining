@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:gravity="right">
+    <TextView
+        android:id="@+id/tv_send"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:textAlignment="center"
+        android:padding="2dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="Hello!!~"
+        android:background="@mipmap/delay_time_over"
+        />
+    <ImageView
+        android:id="@+id/iv_send"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@mipmap/ic_send"
+        />
+</LinearLayout>
